@@ -16,11 +16,10 @@ import java.util.Map;
 
 @Service
 public class AIService {
-
-    @Value("${gemini.api.key:AIzaSyC70xaOIV1WZT2vB8iX3XBDcbqAligksjI}")
+    @Value("${gemini.api.key}")
     private String apiKey;
 
-    @Value("${gemini.api.key2:AIzaSyCbK-vX5IIF9FHP27U07ygQX4mLOLHBwVc}")
+    @Value("${gemini.api.key2:}")
     private String apiKey2;
 
     private static final String GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=";
